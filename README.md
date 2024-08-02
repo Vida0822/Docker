@@ -45,11 +45,23 @@ docker container run --interactive --tty diamol/base
 docker container ls 
 ```
 
-
-
-##### 도커 허브 
+##### 이미지 
 
 ```bash
 docker image pull diamol/ch03-web-ping
 ```
 
+
+### 도커 허브 
+
+```bash
+
+```
+
+##### 로그인
+```bash
+PS C:\Users\SHIN HEEMIN> docker login --username $dockerId
+Password:
+
+Login Succeeded
+```
