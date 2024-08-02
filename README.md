@@ -539,7 +539,30 @@ PS D:\docker_practice\080258\ch03\exercises\web-ping> docker image tag web-ping 
 PS D:\docker_practice\080258\ch03\exercises\web-ping> docker image tag web-ping localhost:5000/web-ping:2.1
 PS D:\docker_practice\080258\ch03\exercises\web-ping> docker image tag web-ping localhost:5000/web-ping:2.1.106
 PS D:\docker_practice\080258\ch03\exercises\web-ping>
-```
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+새로운 크로스 플랫폼 PowerShell 사용 https://aka.ms/pscore6
+
+PS D:\docker_practice\080258> cd ch05/exercises/dotnet-sdk
+PS D:\docker_practice\080258\ch05\exercises\dotnet-sdk> ccd ../aspnet-runtime
+ccd : 'ccd' 용어가 cmdlet, 함수, 스크립트 파일 또는 실행할 수 있는 프로그램 이름으로 인식되지 않습니다. 이름이 정확한지
+ 확인하고 경로가 포함된 경우 경로가 올바른지 검증한 다음 다시 시도하십시오.
+위치 줄:1 문자:1
++ ccd ../aspnet-runtime
++ ~~~
+    + CategoryInfo          : ObjectNotFound: (ccd:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS D:\docker_practice\080258\ch05\exercises\dotnet-sdk> cd ../aspnet-runtime
+PS D:\docker_practice\080258\ch05\exercises\aspnet-runtime> docker image build -t golden/aspnet-core:3.0
+ERROR: "docker buildx build" requires exactly 1 argument.
+See 'docker buildx build --help'.
+
+Usage:  docker buildx build [OPTIONS] PATH | URL | -
+
+Start a build
+PS D:\docker_practice\080258\ch05\exercises\aspnet-runtime>
 ```
 
 ##### 로그인
